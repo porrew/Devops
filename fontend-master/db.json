@@ -1,0 +1,39 @@
+{
+  "formResults": [
+    {
+      "name": "VENGEANCE RGB PRO SL",
+      "description": "32GB (2x16GB) DDR4 DRAM 3200MHz C16 Memory Kit",
+      "id": 1
+    },
+    {
+      "name": "Hyper x Fury",
+      "description": "16GB (4x4GB) DDR4",
+      "brand": "Kingston",
+      "color": [
+        "Black"
+      ],
+      "id": 6
+    },
+    {
+      "name": "Corsair",
+      "date": "2021-03-30",
+      "description": "16GB (8x2GB) DDR4",
+      "brand": "Gskill",
+      "color": [
+        "White"
+      ],
+      "id": 8
+    },
+    {
+      "name": "Hyper x Fury",
+      "date": "2021-04-01",
+      "description": "16GB (8x2GB) DDR4",
+      "brand": "Kingston",
+      "color": [
+        "Silver"
+      ],
+      "price": "2000",
+      "id": 9
+    }
+  ]
+}

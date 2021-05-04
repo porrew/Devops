@@ -1,0 +1,87 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.nav {
+    @apply  px-48 inline-flex
+            space-x-2 items-center h-10;
+}
+
+.navhome {
+    @apply
+        text-black hover:text-opacity-80 font-mono;
+            
+}
+
+.navaddedit {
+    @apply p-4
+        text-black hover:text-opacity-80 font-mono;
+}
+
+.navteam {
+    @apply 
+        text-black hover:text-opacity-80 font-mono;
+}
+
+.navbg {
+    @apply bg-silver;
+}
+
+.productp {
+    @apply flex flex-col
+            justify-center items-center
+            text-lg
+            w-full h-full md:w-auto;
+}
+
+.teamp {
+    @apply w-full h-full md:w-auto;
+}
+
+.addeditp {
+    @apply flex
+            justify-center items-center
+            w-full h-full md:w-auto;
+}
+
+.body {
+    @apply mt-4
+            flex flex-col
+            justify-center items-center
+            text-lg font-mono
+            w-full h-full md:w-auto;
+}
+
+.submitbutton {
+    @apply text-aquamarine
+            bg-black
+            hover:bg-opacity-80
+            rounded                                
+            mt-4 ml-32
+            p-2
+            font-mono;
+}
+
+.showResult {
+    @apply grid grid-cols-2 gap-4 md:gap-8
+            justify-around md:justify-around            
+            py-4 h-auto w-auto md:w-auto;
+}
+
+.editIcon {
+    @apply w-4 h-4 mt-4 ;
+}
+
+.deleteIcon {
+    @apply w-4 h-4 mt-4 ml-4;
+}
+
+.notFound {
+    @apply flex flex-col
+            justify-center items-center
+            text-4xl font-serif
+            w-full h-full md:w-auto
+            pt-20;
+}

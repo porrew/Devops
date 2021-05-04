@@ -1,0 +1,37 @@
+networks:
+  project-network:
+
+services:
+  db:
+    container_name: db
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: mysql
+      MYSQL_ROOT_HOST: 'localhost'
+      MYSQL_USER: adminnaja
+      MYSQL_PASSWORD: Password@Project221
+    ports:
+      - "3306:3306"
+    volumes:
+      - "./db/int221_init.sql:/docker-entrypoint-initdb.d/1.sql"
+    networks:
+      - project-network
+  backend:
+    container_name: backend
+    build:
+      context: ./backend-dev
+    ports:
+      - "8081:8080"
+    networks:
+      - project-network
+  fontend:
+    container_name: fontend
+    build:
+      context: ./fontend-master
+    ports:
+      - "8080:80"
+    networks:
+      - project-network
+  
+  
