@@ -1,0 +1,1 @@
+GRANT ALL ON *.* to 'User_name'@'%' WITH GRANT OPTION;
