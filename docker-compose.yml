@@ -15,6 +15,8 @@ services:
       - "3306:3306"
     volumes:
       - "./db/int221_init.sql:/docker-entrypoint-initdb.d/1.sql"
+      - "./db/int221_grant.sql:/docker-entrypoint-initdb.d/2.sql"
+      - "./db/int221_insert.sql:/docker-entrypoint-initdb.d/3.sql"
     networks:
       - project-network
   backend:
