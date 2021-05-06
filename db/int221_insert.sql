@@ -16,23 +16,23 @@ VALUES (002, 'White');
 INSERT INTO color (color_Id, color_Name)
 VALUES (003, 'Silver');
 
-INSERT INTO product (product_Id, Product_Name, Description, Price, Date, Path)
-VALUES (001, 'VENGEANCE RGB PRO SL', '32GB (2x16GB) DDR4 DRAM 3200MHz C16', '6948.46', '02-02-2020', '001.png');
+INSERT INTO product (product_Id, Product_Name, Description, Price, Date, Path, Brand_Brand_Id)
+VALUES (001, 'VENGEANCE RGB PRO SL', '32GB (2x16GB) DDR4 DRAM 3200MHz C16', '6948.46', '2020-02-02', '001.png', '001');
 
-INSERT INTO product (product_Id, Product_Name, Description, Price, Date, Path)
-VALUES (002, 'VENGEANCE LPX', '32GB (2x16GB) DDR4 2400MHz C16', '6543.37', '03-03-2020', '002.png');
+INSERT INTO product (product_Id, Product_Name, Description, Price, Date, Path, Brand_Brand_Id)
+VALUES (002, 'VENGEANCE LPX', '32GB (2x16GB) DDR4 2400MHz C16', '6543.37', '2020-03-03', '002.png', '001');
 
-INSERT INTO product (product_Id, Product_Name, Description, Price, Date, Path)
-VALUES (003, 'Trident Z RGB', '16GB (2x8GB) DDR4-3200MHz CL16', '4690.00', '04-04-2020', '003.png');
+INSERT INTO product (product_Id, Product_Name, Description, Price, Date, Path, Brand_Brand_Id)
+VALUES (003, 'Trident Z RGB', '16GB (2x8GB) DDR4-3200MHz CL16', '4690.00', '2020-04-04', '003.png', '002');
 
-INSERT INTO product (product_Id, Product_Name, Description, Price, Date, Path)
-VALUES (004, 'Trident Z', '16GB (2x8GB) DDR4-3200MHz CL14', '3899.00', '05-05-2020', '004.png');
+INSERT INTO product (product_Id, Product_Name, Description, Price, Date, Path, Brand_Brand_Id)
+VALUES (004, 'Trident Z', '16GB (2x8GB) DDR4-3200MHz CL14', '3899.00', '2020-05-05', '004.png', '002');
 
-INSERT INTO product (product_Id, Product_Name, Description, Price, Date, Path)
-VALUES (005, 'HyperX FURY', '8GB (8GBx1) DDR4 2400MHz CL15', '1290.00', '06-06-2020', '005.png');
+INSERT INTO product (product_Id, Product_Name, Description, Price, Date, Path, Brand_Brand_Id)
+VALUES (005, 'HyperX FURY', '8GB (8GBx1) DDR4 2400MHz CL15', '1290.00', '2020-06-06', '005.png', '003');
 
-INSERT INTO product (product_Id, Product_Name, Description, Price, Date, Path)
-VALUES (006, 'HyperX FURY', '4GB (4GBx1) DDR3 1600MHz CL10', '1190.00', '07-07-2020', '006.png');
+INSERT INTO product (product_Id, Product_Name, Description, Price, Date, Path, Brand_Brand_Id)
+VALUES (006, 'HyperX FURY', '4GB (4GBx1) DDR3 1600MHz CL10', '1190.00', '2020-07-07', '006.png', '003');
 
 INSERT INTO have (product_id, color_id)
 VALUES (001, 001);

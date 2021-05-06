@@ -32,7 +32,7 @@ ENGINE = InnoDB;
 DROP TABLE IF EXISTS `mydb`.`Product` ;
 
 CREATE TABLE IF NOT EXISTS `mydb`.`Product` (
-  `Product_Id` INT NOT NULL,
+  `Product_Id` INT NOT NULL AUTO_INCREMENT,
   `Product_Name` VARCHAR(1000) NOT NULL,
   `Description` VARCHAR(1000) NOT NULL,
   `Price` DOUBLE NOT NULL,
