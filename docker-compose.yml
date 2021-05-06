@@ -1,6 +1,6 @@
 networks:
   project-network:
-
+    driver: host
 services:
   db:
     container_name: db
