@@ -1,6 +1,5 @@
 networks:
-  project-network:
-    network_mode: "host"
+  project-network: "host"
 services:
   db:
     container_name: db
