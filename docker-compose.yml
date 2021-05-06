@@ -1,8 +1,7 @@
-networks:
-  project-network:
-    net: "host"
+version: '3.4'
 services:
   db:
+    network_mode: host
     container_name: db
     image: mysql:latest
     restart: always
@@ -17,23 +16,19 @@ services:
       - "./db/int221_init.sql:/docker-entrypoint-initdb.d/1.sql"
       - "./db/int221_grant.sql:/docker-entrypoint-initdb.d/2.sql"
       - "./db/int221_insert.sql:/docker-entrypoint-initdb.d/3.sql"
-    networks:
-      - project-network
   backend:
+    network_mode: host
     container_name: backend
     build:
       context: ./backend-dev
     ports:
       - "8081:8080"
-    networks:
-      - project-network
   fontend:
+    network_mode: host
     container_name: fontend
     build:
       context: ./fontend-master
     ports:
       - "8080:80"
-    networks:
-      - project-network
   
   
