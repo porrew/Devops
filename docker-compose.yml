@@ -1,5 +1,6 @@
 networks:
-  project-network: host
+  project-network:
+    net: "host"
 services:
   db:
     container_name: db
