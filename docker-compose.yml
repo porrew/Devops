@@ -8,8 +8,6 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: mysql
       MYSQL_ROOT_HOST: 'localhost'
-      MYSQL_USER: adminnaja
-      MYSQL_PASSWORD: Password@Project221
     ports:
       - "3306:3306"
     volumes:
@@ -23,7 +21,9 @@ services:
     build:
       context: ./backend-dev
     ports:
-      - "8081:8080"
+      - "8081:8081"
+    depends_on:
+      - "db"
     networks:
       - project-network
   fontend:
@@ -32,6 +32,18 @@ services:
       context: ./fontend-master
     ports:
       - "8080:80"
+    depends_on:
+      - "backend"
+    networks:
+      - project-network
+  web:
+    image: nginx:stable-alpine
+    container_name: reverse_proxy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./reverse_proxy/nginx.conf:/etc/nginx/conf.d/default.conf
     networks:
       - project-network
   
