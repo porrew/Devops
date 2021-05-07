@@ -37,7 +37,7 @@ services:
     networks:
       - project-network
   web:
-    image: nginx:stable-alpine
+    build: .
     container_name: reverse_proxy
     ports:
       - "80:80"
