@@ -4,6 +4,7 @@ services:
   mydb:
     container_name: mydb
     image: mysql:latest
+    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: Password@Project221
       MYSQL_ROOT_USER: root
