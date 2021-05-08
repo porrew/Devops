@@ -2,41 +2,37 @@ networks:
   project-network:
 
 services:
-  db:
-    container_name: db
+  mydb:
+    container_name: mydb
     image: mysql:latest
-    restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: mysql
+      MYSQL_ROOT_PASSWORD: Password@Project221
       MYSQL_ROOT_USER: root
-      MYSQL_DATABASE: db
+      MYSQL_DATABASE: mydb
     ports:
       - "3306:3306"
     volumes:
       - "./db/int221_init.sql:/docker-entrypoint-initdb.d/1.sql"
       - "./db/int221_grant.sql:/docker-entrypoint-initdb.d/2.sql"
       - "./db/int221_insert.sql:/docker-entrypoint-initdb.d/3.sql"
-    networks:
-      - project-network
   backend:
     container_name: backend
-    build:
+    build: 
       context: ./backend-dev
+    image: devops_backend
     ports:
       - "8081:8081"
-    depends_on:
-      - "db"
-    networks:
-      - project-network
   fontend:
     container_name: fontend
     build:
       context: ./fontend-master
+    image: devops_fontend
     ports:
       - "8080:80"
-    depends_on:
-      - "backend"
-    networks:
-      - project-network
-  
+
+
+networks:
+  default:
+    external:
+      name: project-network
   
