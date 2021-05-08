@@ -21,6 +21,8 @@ services:
     image: devops_backend
     ports:
       - "8081:8081"
+    depends_on: 
+      - mydb
   fontend:
     container_name: fontend
     build:
@@ -28,6 +30,8 @@ services:
     image: devops_fontend
     ports:
       - "80:80"
+    depends_on: 
+      - backend
 
 
 networks:
