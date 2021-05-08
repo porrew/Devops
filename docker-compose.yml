@@ -1,5 +1,4 @@
-networks:
-  project-network:
+version: "3"
 
 services:
   mydb:
@@ -25,7 +24,7 @@ services:
   fontend:
     container_name: fontend
     build:
-      context: ./fontend-master
+      context: .
     image: devops_fontend
     ports:
       - "80:80"
