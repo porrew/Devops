@@ -28,7 +28,7 @@ services:
       context: ./fontend-master
     image: devops_fontend
     ports:
-      - "8080:80"
+      - "80:80"
 
 
 networks:
