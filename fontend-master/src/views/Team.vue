@@ -1,6 +1,6 @@
 <template>
   <div class="teamp">
-    <Member class="pt-4"></Member> 
+    <Member class="pt-20"></Member> 
   </div>
 </template>
 

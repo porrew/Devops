@@ -1,7 +1,8 @@
 <template>
-    <div class="member">
-        <p class="justify-center flex text-xl font-mono pt-20">Members</p>
-        <div class= "justify-center space-x-20 items-center flex flex-row pt-20">
+    <div class="">
+        <bor-der>
+        <p class="justify-center flex text-xl font-mono pt-4">Members</p>
+        <div class= "justify-center space-x-20 items-center flex flex-row pt-4">
                     
             <p class="font-mono">
                 : Kamolwish Woramethaleot
@@ -29,6 +30,7 @@
                 : DevOps, Back-End
             </p>
             
-        </div>        
+        </div>     
+        </bor-der>   
     </div>
 </template>

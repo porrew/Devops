@@ -1,14 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Product from '../views/Product.vue'
+import About from '../views/About.vue'
 import Team from '../views/Team.vue'
 import NotFound from '../views/NotFound.vue'
-import AddEdit from '../views/AddEdit.vue'
+import Product from '../views/Product.vue'
 
 const routes = [
   {
-    path: '/',
-    name: 'Product',
-    component: Product
+    path: '/about',
+    name: 'About',
+    component: About
   },
   {
     path: '/team',
@@ -16,9 +16,9 @@ const routes = [
     component: Team
   },
   {
-    path: '/addedit',
-    name: 'AddEdit',    
-    component: AddEdit
+    path: '/',
+    name: 'Product',    
+    component: Product
   },
   {
     path: '/:catchNotMatchPath(.*)',

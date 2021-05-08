@@ -9,15 +9,15 @@
             space-x-2 items-center h-10;
 }
 
-.navhome {
-    @apply
+.navproduct {
+    @apply 
         text-black hover:text-opacity-80 font-mono;
-            
 }
 
-.navaddedit {
+.navabout {
     @apply p-4
         text-black hover:text-opacity-80 font-mono;
+            
 }
 
 .navteam {
@@ -37,17 +37,35 @@
 }
 
 .teamp {
-    @apply w-full h-full md:w-auto;
+    @apply flex
+            justify-center items-center
+            w-full h-full md:w-auto;
+}
+
+.aboutp {
+    @apply flex
+            justify-center items-center
+            text-2xl font-mono
+            w-full h-full md:w-auto
+            pt-20;
 }
 
 .addeditp {
+    @apply flex
+            justify-center items-center
+            w-full h-full md:w-auto
+            pt-4
+            pb-20;
+}
+
+.showresultp {
     @apply flex
             justify-center items-center
             w-full h-full md:w-auto;
 }
 
 .body {
-    @apply mt-4
+    @apply mt-2
             flex flex-col
             justify-center items-center
             text-lg font-mono
@@ -70,6 +88,28 @@
             py-4 h-auto w-auto md:w-auto;
 }
 
+.addeditbutton {
+    @apply text-aquamarine
+            bg-black
+            hover:bg-opacity-80
+            rounded                                                    
+            p-2
+            font-mono
+            absolute top-16 right-20
+            md:absolute;
+}
+
+.cancelbutton {
+    @apply text-lightpink
+            bg-black
+            hover:bg-opacity-80
+            rounded                                                    
+            p-2            
+            font-mono
+            absolute -bottom-2 right-20
+            md:absolute;
+}
+
 .editIcon {
     @apply w-4 h-4 mt-4 ;
 }
@@ -79,9 +119,9 @@
 }
 
 .notFound {
-    @apply flex flex-col
+    @apply flex
             justify-center items-center
-            text-4xl font-serif
+            text-4xl font-mono
             w-full h-full md:w-auto
             pt-20;
 }
