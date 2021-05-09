@@ -44,6 +44,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.23</version>
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
@@ -66,11 +67,7 @@
 			<artifactId>jquery</artifactId>
 			<version>1.11.1</version>
 		</dependency>
-		<dependency>
-			<groupId>nz.net.ultraq.thymeleaf</groupId>
-			<artifactId>thymeleaf-layout-dialect</artifactId>
-			<version>2.5.1</version>
-		</dependency>
+		
 		
 	</dependencies>
 

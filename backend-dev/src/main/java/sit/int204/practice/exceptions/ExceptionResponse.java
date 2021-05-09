@@ -6,10 +6,7 @@ public class ExceptionResponse {
 
     public static enum ERROR_CODE {
         ITEM_DOES_NOT_EXIST(1001), ITEM_ALREADY_EXIST(2001);
-        private int value;
-
         ERROR_CODE(int value) {
-            this.value = value;
         }
     }
 
