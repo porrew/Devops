@@ -28,7 +28,7 @@ services:
   fontend:
     container_name: fontend
     build:
-      context: .
+      context: ./fontend-master
     image: devops_fontend
     ports:
       - "80:80"
