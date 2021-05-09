@@ -177,7 +177,7 @@ export default {
       selectColor: [],
       editForm: false,
       editFormId: '',
-      url: 'http://localhost:4000/formResults'
+      url: `${process.env.VUE_APP_ROOT_API}`
     }
   },
 
